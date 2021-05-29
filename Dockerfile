@@ -8,7 +8,7 @@ RUN go install -tags "oss nolimit" github.com/drone/drone/cmd/drone-server
 
 FROM alpine:3.13
 
-EXPOSE 80 443
+EXPOSE 80 443 9000
 VOLUME /data
 
 # from https://github.com/drone/drone/blob/ca454594021099909fb4ee9471720cacfe3207bd/docker/Dockerfile.server.linux.amd64
